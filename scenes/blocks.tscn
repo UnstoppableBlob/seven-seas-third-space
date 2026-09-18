@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cvlg06lj0ppj"]
+
+[ext_resource type="Script" uid="uid://dgyaimnxvrnh7" path="res://scripts/merger.gd" id="1_wv7cx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y12x8"]
+albedo_color = Color(0.396078, 0.203922, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mccq6"]
+material = SubResource("StandardMaterial3D_y12x8")
+size = Vector3(1, 0.75, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_de7yx"]
+albedo_color = Color(0.329412, 0.615686, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_be1rx"]
+material = SubResource("StandardMaterial3D_de7yx")
+size = Vector3(1, 0.25, 1)
+
+[node name="Blocks" type="Node3D" unique_id=646289588]
+
+[node name="MeshMerger" type="Node3D" parent="." unique_id=539039075]
+script = ExtResource("1_wv7cx")
+trigger_merge = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshMerger" unique_id=106686882]
+mesh = SubResource("BoxMesh_mccq6")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="MeshMerger" unique_id=1134400656]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+mesh = SubResource("BoxMesh_be1rx")
+skeleton = NodePath("../..")
