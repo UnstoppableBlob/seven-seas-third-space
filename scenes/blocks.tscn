@@ -1,32 +1,95 @@
-[gd_scene format=3 uid="uid://cvlg06lj0ppj"]
+[gd_scene format=4 uid="uid://cvlg06lj0ppj"]
 
-[ext_resource type="Script" uid="uid://dgyaimnxvrnh7" path="res://scripts/merger.gd" id="1_wv7cx"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xpugi"]
+resource_name = "Material_0.001"
+albedo_color = Color(0.5194378, 0.4287728, 0.1765396, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y12x8"]
-albedo_color = Color(0.396078, 0.203922, 0, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1wbgy"]
+resource_name = "Material_1.001"
+albedo_color = Color(0, 0.5843137, 0, 1)
 
-[sub_resource type="BoxMesh" id="BoxMesh_mccq6"]
-material = SubResource("StandardMaterial3D_y12x8")
-size = Vector3(1, 0.75, 1)
+[sub_resource type="ArrayMesh" id="ArrayMesh_irshq"]
+_surfaces = [{
+"aabb": AABB(-0.5, -0.375, -0.5, 1, 0.75, 1),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAACAAMABAACAAEAAwACAAQABQABAAAABQAAAAMABQAGAAEABAABAAYABQADAAcAAwAEAAcABwAGAAUABwAEAAYA"),
+"name": "Material_0.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP////8AAP///////wAA//8AAP//AAD/////AAAAAAAAAAAAAAAAAAD//wAAAAD//wAAAAAAAA==")
+}, {
+"aabb": AABB(-0.5, 0.3739624, -0.5, 1, 0.25, 1),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAACAAMABAACAAEAAwACAAQABQABAAAABQAAAAMABQAGAAEABAABAAYABQADAAcAAwAEAAcABwAGAAUABwAEAAYA"),
+"name": "Material_1.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP////8AAP///////wAA//8AAP//AAD/////AAAAAAAAAAAAAAAAAAD//wAAAAD//wAAAAAAAA==")
+}]
+blend_shape_mode = 0
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_de7yx"]
-albedo_color = Color(0.329412, 0.615686, 0, 1)
+[sub_resource type="ArrayMesh" id="ArrayMesh_6l7ab"]
+resource_name = "Grass_Mesh_0_001"
+_surfaces = [{
+"aabb": AABB(-0.5, -0.375, -0.5, 1, 0.75, 1),
+"attribute_data": PackedByteArray("AAD/fwAAAABVVQAAVVX/f6qq/3+qqgAA//8AAP///39VVf9/VVUAAKqqAACqqv9/AAD//wAA/39VVf9/VVX//1VV//9VVf9/qqr/f6qq//+qqv//qqr/f////3//////"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcA"),
+"material": SubResource("StandardMaterial3D_xpugi"),
+"name": "Material_0.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP//AIAAAP////8AgP///////wCA//8AAP//AID//wAAAAD///////8AAP//AAD//wAA//8AAAAAAAD/////AAD///+//////////7//////AAD/v///AAAAAP+/AAAAAAAA/78AAP//AAD/vwAA//////+/AAAAAP///7//////AAD/////////////AAD///////8AAP//AAD//wAAAAAAAP+/AAAAAP///7///wAA////v///AAAAAP+//3////9/////f////3////9/////f////3////9/////fwAA/38AAP9/AAD/fwAA/3////9/////f////3////9//7//f/+//3//v/9//78AAP9/AAD/fwAA/38AAP9/")
+}, {
+"aabb": AABB(-0.5, 0.3739624, -0.5, 1, 0.25, 1),
+"attribute_data": PackedByteArray("AAD/fwAAAABVVQAAVVX/f6qq/3+qqgAA//8AAP///39VVf9/VVUAAKqqAACqqv9/AAD//wAA/39VVf9/VVX//1VV//9VVf9/qqr/f6qq//+qqv//qqr/f////3//////"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcA"),
+"material": SubResource("StandardMaterial3D_1wbgy"),
+"name": "Material_1.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP//AIAAAP////8AgP///////wCA//8AAP//AID//wAAAAD///////8AAP//AAD//wAA//8AAAAAAAD/////AAD///+//////////7//////AAD/v///AAAAAP+/AAAAAAAA/78AAP//AAD/vwAA//////+/AAAAAP///7//////AAD/////////////AAD///////8AAP//AAD//wAAAAAAAP+/AAAAAP///7///wAA////v///AAAAAP+//3////9/////f////3////9/////f////3////9/////fwAA/38AAP9/AAD/fwAA/3////9/////f////3////9//7//f/+//3//v/9//78AAP9/AAD/fwAA/38AAP9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_irshq")
 
-[sub_resource type="BoxMesh" id="BoxMesh_be1rx"]
-material = SubResource("StandardMaterial3D_de7yx")
-size = Vector3(1, 0.25, 1)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_wv7cx"]
+points = PackedVector3Array(-0.5, -0.375, -0.5, -0.5, 0.6239624, -0.5, 0.5, -0.375, -0.5, -0.5, -0.375, 0.5, -0.5, 0.6239624, 0.5, 0.5, 0.6239624, -0.5, 0.5, -0.375, 0.5, 0.5, 0.6239624, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6nyg1"]
+albedo_color = Color(0.4573716, 0.37628907, 0.15026644, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_nweci"]
+material = SubResource("StandardMaterial3D_6nyg1")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_giubl"]
+points = PackedVector3Array(0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5)
 
 [node name="Blocks" type="Node3D" unique_id=646289588]
 
-[node name="MeshMerger" type="Node3D" parent="." unique_id=539039075]
-script = ExtResource("1_wv7cx")
-trigger_merge = true
+[node name="Grass" type="MeshInstance3D" parent="." unique_id=108275699]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1239624, 0)
+mesh = SubResource("ArrayMesh_6l7ab")
+skeleton = NodePath("")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshMerger" unique_id=106686882]
-mesh = SubResource("BoxMesh_mccq6")
-skeleton = NodePath("../..")
+[node name="StaticBody3D" type="StaticBody3D" parent="Grass" unique_id=973317940]
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="MeshMerger" unique_id=1134400656]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-mesh = SubResource("BoxMesh_be1rx")
-skeleton = NodePath("../..")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Grass/StaticBody3D" unique_id=1542663502]
+shape = SubResource("ConvexPolygonShape3D_wv7cx")
+
+[node name="Dirt" type="MeshInstance3D" parent="." unique_id=193036111]
+mesh = SubResource("BoxMesh_nweci")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Dirt" unique_id=395846007]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Dirt/StaticBody3D" unique_id=2133966424]
+shape = SubResource("ConvexPolygonShape3D_giubl")

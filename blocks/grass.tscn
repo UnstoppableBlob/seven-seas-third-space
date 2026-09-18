@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dku7servfvs2k"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y12x8"]
+albedo_color = Color(0.6338093, 0.38244784, 0.13834932, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2ektm"]
+material = SubResource("StandardMaterial3D_y12x8")
+size = Vector3(1, 0.75, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_de7yx"]
+albedo_color = Color(0.329412, 0.615686, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_o5y62"]
+material = SubResource("StandardMaterial3D_de7yx")
+size = Vector3(1, 0.25, 1)
+
+[node name="Grass" type="Node3D" unique_id=314132111]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1227340620]
+mesh = SubResource("BoxMesh_2ektm")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=90495064]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+mesh = SubResource("BoxMesh_o5y62")
